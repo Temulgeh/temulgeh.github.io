@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>i have a github page now</title>
+    </head>
+    <body id="body">
+        <script>
+            const body = document.getElementById("body");
+            let hue = 0;
+            function updoot()
+            {
+                requestAnimationFrame(updoot);
+                body.style.color = "hsl(" + hue + ", 90%, 90%)"
+                hue = ++hue % 360;
+            }
+        </script>
+    </body>
+</html>
