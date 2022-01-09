@@ -2,53 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>now there is a non movable moving box</title>
+        <link href="style.css" rel="stylesheet" />
+        <title>test</title>
     </head>
-    <body style="background-color: #171717;">
-        <canvas id="canvas" style="
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            "></canvas>
-        <script>
-            const widthTiles = 48;
-            const heightTiles = 24;
-            const tileSize = 32;
-            const playerSize = 32;
-            const playerAcc = 1;
-            const playerFriction = .83;
-            const bgColor = "#202730";
-            const playerColor = "#A0B7D0";
-
-            const width = widthTiles * tileSize;
-            const height = heightTiles * tileSize;
-
-            var playerPos = {
-                x: (width - playerSize) / 2,
-                y: (height - playerSize) / 2
-                };
-            console.log(playerPos);
-            console.log(width, height);
-
-            const canvas = document.getElementById("canvas");
-            canvas.width = width;
-            canvas.height = height;
-            ctx = canvas.getContext("2d");
-
-            function update()
-            {
-                ctx.fillStyle = bgColor;
-                ctx.fillRect(0, 0, width, height);
-
-                ctx.fillStyle = playerColor;
-                ctx.fillRect(playerPos.x, playerPos.y, playerSize, playerSize);
-                
-                requestAnimationFrame(update);
-            }
-
-            update();
-
-        </script>
+    <body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis inventore dicta laboriosam dolor architecto quisquam, rerum exercitationem ipsam nemo officia nisi fugit nam veniam similique! Eaque debitis itaque quidem enim suscipit nostrum magni cumque vel rerum, nemo ipsa dignissimos saepe delectus mollitia perferendis magnam tempore? Deserunt, dicta et vitae nemo laudantium voluptatum iste recusandae natus perspiciatis officiis suscipit itaque ab! Minima non eius laboriosam natus facere laborum in eaque?
     </body>
 </html>
